@@ -21,29 +21,29 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <div>
         <Navbar></Navbar>
 
         <Switch>
 
-          <Route path='/' component={Home} />
+          <Route exact path='/' component={Home} />
           
-          <Route path='/quem-somos' component={AboutUs} />
+          <Route exact path='/quem-somos' component={AboutUs} />
 
-          <Route path='/onde-estamos'>
+          <Route exact path='/onde-estamos'>
             <Location />
           </Route>
 
-          <Route path='/parceiros'>
+          <Route exact path='/parceiros'>
             <Partners />
           </Route>
 
-          <Route path='/contato'>
+          <Route exact path='/contato'>
             <Contact />
           </Route>
 
         </Switch>
-      </Router>
+      </div>
     );
   }
 }
