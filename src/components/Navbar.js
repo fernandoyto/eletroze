@@ -4,21 +4,18 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div className=''>
+    <div className='container home'>
       <h1>
         <Link to='/'>
-          ELETROZÉ
+          ELETROZÉ MATERIAIS PARA CONSTRUÇÃO
         </Link>
       </h1>
-      <h2>
-        MATERIAIS PARA CONSTRUÇÃO
-      </h2>
-      <nav>
-        <Link to='/'>Home</Link>
-        <Link to='/quem-somos'>Quem Somos</Link>
-        <Link to='/onde-estamos'>Onde Estamos</Link>
-        <Link to='/parceiros'>Parceiros</Link>
-        <Link to='/contato'>Contato</Link>
+      <nav className='row'>
+        <Link className='col' to='/'>Página Inicial</Link>
+        <Link className='col' to='/quem-somos'>Quem Somos</Link>
+        <Link className='col'to='/onde-estamos'>Onde Estamos</Link>
+        <Link className='col'to='/parceiros'>Parceiros</Link>
+        <Link className='col'to='/contato'>Contato</Link>
       </nav>
     </div>
   )
