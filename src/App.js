@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
 import { 
-  BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Location from './components/Location';
-import Partners from './components/Partners';
 import Contact from './components/Contact';
 
 import './App.css';
@@ -30,17 +29,9 @@ class App extends Component {
           
           <Route exact path='/quem-somos' component={AboutUs} />
 
-          <Route exact path='/onde-estamos'>
-            <Location />
-          </Route>
+          <Route exact path='/localizacao' component={Location} />
 
-          <Route exact path='/parceiros'>
-            <Partners />
-          </Route>
-
-          <Route exact path='/contato'>
-            <Contact />
-          </Route>
+          <Route exact path='/contato' component={Contact} />
 
         </Switch>
       </div>
