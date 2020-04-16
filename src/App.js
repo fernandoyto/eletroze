@@ -6,6 +6,7 @@ import {
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import AboutUs from './components/AboutUs';
 import Location from './components/Location';
@@ -34,6 +35,8 @@ class App extends Component {
           <Route exact path='/contato' component={Contact} />
 
         </Switch>
+
+        <Footer></Footer>
       </div>
     );
   }

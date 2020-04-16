@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
+import './Location.css';
 
 const Map = () => {
 
@@ -13,6 +14,7 @@ const Map = () => {
   const [selected, setSelected] = useState(true);
 
   return (
+    <div className='test-location'>
       <GoogleMap
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
@@ -51,6 +53,7 @@ const Map = () => {
           </InfoWindow>
         )}
       </GoogleMap>
+    </div>
   );
 }
 
