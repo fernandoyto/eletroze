@@ -15,9 +15,9 @@ const Contact = () => {
           <h2>Horário de funcionamento</h2>
           <p>Segunda a Sexta - 08h às 18h</p>
           <p>Sábado - 08h às 17h30</p>
+          <p>Feriados - 08h às 12h30</p>
         </Col>
         <Col>
-          <h2>Contatos</h2>
           <p> <img src="img/whatsapp.png" alt="whatsapp" /> WhatsApp</p>
           <p>(11) 98765-4321</p>
           <p> <img src="img/phone.png" alt="telefone" /> Telefone</p>

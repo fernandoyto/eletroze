@@ -5,12 +5,12 @@ import {
 } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import AboutUs from './components/AboutUs';
-import Location from './components/Location';
-import Contact from './components/Contact';
+import Navbar from './components/Navbar/Navbar';
+import Footer from './components/Footer/Footer';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import Location from './components/Location/Location';
+import Contact from './components/Contact/Contact';
 
 import './App.css';
 
@@ -28,7 +28,7 @@ class App extends Component {
 
           <Route exact path='/' component={Home} />
           
-          <Route exact path='/quem-somos' component={AboutUs} />
+          <Route exact path='/sobre' component={About} />
 
           <Route exact path='/localizacao' component={Location} />
 
