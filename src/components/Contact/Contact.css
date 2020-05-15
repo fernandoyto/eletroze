@@ -1,3 +1,9 @@
-img {
+.contact-img {
     height: 36px;
+}
+
+.contact {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
 }

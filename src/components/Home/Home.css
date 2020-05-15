@@ -1,0 +1,17 @@
+.img-fachada {
+    width: 900px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.landing-container {
+    height: 90vh;
+}
+
+.about-container {
+    height: 45vh;
+}
+
+.links-container {
+    height: 45vh;
+}

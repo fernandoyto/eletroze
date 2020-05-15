@@ -6,7 +6,7 @@ import './Contact.css'
 
 const Contact = () => {
   return (
-    <Container className="w-75">
+    <Container className="w-75 contact">
       <div className='page-header'>
         <h1>Fale com a gente!</h1>
       </div>
@@ -18,12 +18,12 @@ const Contact = () => {
           <p>Feriados - 08h às 12h30</p>
         </Col>
         <Col>
-          <p> <img src="img/whatsapp.png" alt="whatsapp" /> WhatsApp</p>
+          <p> <img className="contact-img" src="img/whatsapp.png" alt="whatsapp" /> WhatsApp</p>
           <p>(11) 98765-4321</p>
-          <p> <img src="img/phone.png" alt="telefone" /> Telefone</p>
+          <p> <img className="contact-img" src="img/phone.png" alt="telefone" /> Telefone</p>
           <p>(11) 2041-4940</p>
           <p>(11) 2041-7638</p>
-          <p> <img src="img/gmail.png" alt="gmail" /> Email</p>
+          <p> <img className="contact-img" src="img/gmail.png" alt="gmail" /> Email</p>
           <p>eletroze.mat@gmail.com</p>
         </Col>
       </Row>

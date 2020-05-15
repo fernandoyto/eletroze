@@ -21,20 +21,21 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="app">
         <Navbar></Navbar>
+        <div className="main-content">
+          <Switch>
 
-        <Switch>
+            <Route exact path='/' component={Home} />
+            
+            <Route exact path='/sobre' component={About} />
 
-          <Route exact path='/' component={Home} />
-          
-          <Route exact path='/sobre' component={About} />
+            <Route exact path='/localizacao' component={Location} />
 
-          <Route exact path='/localizacao' component={Location} />
+            <Route exact path='/contato' component={Contact} />
 
-          <Route exact path='/contato' component={Contact} />
-
-        </Switch>
+          </Switch>
+        </div>
 
         <Footer></Footer>
       </div>
