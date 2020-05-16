@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Image from 'react-bootstrap/Image'
+import Button from 'react-bootstrap/Button'
+import { Link } from 'react-router-dom'
 import './Home.css'
 
 const Home = () => {
@@ -21,8 +23,14 @@ const Home = () => {
             </div>
             <div>
               <p>
-                Os melhores produtos e os melhores preços há 20 anos em A. E. Carvalho!
+                Desde 1992 trazendo os melhores produtos e os melhores preços!
               </p>
+            </div>
+            <div>
+              <Button href="/localizacao" variant="outline-dark">
+                Localização
+              </Button>
+              <Button variant="outline-dark">Contato</Button>
             </div>
             
         </Col>
@@ -30,29 +38,20 @@ const Home = () => {
 
       <Row className="about-container text-center d-flex flex-column">
         <Col className="row-title">
-          <h2 className="">
-            O que é o Eletrozé?
+          <h2>
+            Por que comprar no Eletrozé?
           </h2>
         </Col>
         <Col>
-          <Row>
+          <Row classname="justify-content-md-center">
             <Col>
-                <p>
-                  Pipipi 1
-                  Pópópó
-                </p>
+              export
             </Col>  
-            <Col>
-                <p>
-                  Pipipi 2
-                  Pópópó
-                </p>
+            <Col md="auto">
+              asdsad
             </Col>   
             <Col>
-                <p>
-                  Pipipi 3
-                  Pópópó
-                </p>
+              sdada
             </Col>   
           </Row>
         </Col>  
@@ -65,11 +64,11 @@ const Home = () => {
           </h2>
         </Col>
         <Col>
-          <Row>
+          <Row classname="justify-content-md-center">
             <Col>
               Link 1 - Localização
             </Col>
-            <Col>
+            <Col md="auto">
               Link 2 - Sobre nós
             </Col>
             <Col>

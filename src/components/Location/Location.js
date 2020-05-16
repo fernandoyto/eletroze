@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Navbar from '../Navbar/Navbar';
+import Container from 'react-bootstrap/Container';
 import { GoogleMap, withScriptjs, withGoogleMap, Marker, InfoWindow } from 'react-google-maps';
 import './Location.css';
 
@@ -14,7 +16,7 @@ const Map = () => {
   const [selected, setSelected] = useState(true);
 
   return (
-    <div className='test-location'>
+    <div>
       <GoogleMap
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
@@ -38,8 +40,6 @@ const Map = () => {
                 <br></br>
                 08223-040
                 <br></br>
-                Brasil
-                <br></br>
                 <a
                   style={{ textDecoration: 'underline' }}
                   href={`https://www.google.com/maps/dir/?api=1&destination=Eletrozé+Materiais+para+Construção+Rua+Jaguarundi+303' }}`}
@@ -61,13 +61,23 @@ const WrappedMap = withScriptjs(withGoogleMap(Map))
 
 export default function Location() {
   return (
-    <div style={{ height: "100vh", width: "100%" }}>
-      <WrappedMap
-        googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
-        loadingElement={<div style={{ height: "100%" }} />}
-        containerElement={<div style={{ height: "100%" }} />}
-        mapElement={<div style={{ height: "100%" }} />}
-      />
-    </div>
+    <Container className="location" fluid>
+      <Navbar></Navbar>
+      <div className="d-flex flex-column justfiy-content-center">
+        <div className="map-info">
+          <p>
+            Estamos na Rua Jaguarundi, 303.
+          </p>
+        </div>
+        <div className="map-div">
+          <WrappedMap
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
+            loadingElement={<div style={{ height: "100%" }} />}
+            containerElement={<div style={{ height: "100%", width: "100%" }} />}
+            mapElement={<div style={{ height: "100%" }} />}
+          />
+        </div>
+      </div>
+    </Container>
   )
 };

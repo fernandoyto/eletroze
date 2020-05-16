@@ -1,9 +1,3 @@
-a {
-  text-decoration: none;
-  color: black;
-  /* background-color: black; */
-}
-
-.home {
-  text-align: center;
+.eletronav {
+  background-color: #F8CC0A !important;
 }

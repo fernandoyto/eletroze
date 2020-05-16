@@ -1,5 +1,17 @@
 .footer {
     background-color: #F5F5F7;
-    min-height: 5vh;
     padding: 0;
+}
+
+.icons-div {
+}
+
+.mytext-div {
+    /* padding-top: 1vh; */
+    font-size: 2vh;
+}
+
+.icon-image {
+    height: 30px;
+    padding: 1vh;
 }
