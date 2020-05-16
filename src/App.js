@@ -22,7 +22,6 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <Navbar></Navbar>
         <div className="main-content">
           <Switch>
 

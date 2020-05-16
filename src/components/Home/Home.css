@@ -1,17 +1,32 @@
-.img-fachada {
-    width: 900px;
-    height: 700px;
-    border-radius: 10px;
+.img-logo {
+    width: 15vh;
+    height: 10vh;
+}
+
+.img-container {
+    padding-top: 2vh;
+    max-height: 25%;
 }
 
 .landing-container {
     height: 90vh;
+    background-color: #F8CC0A
 }
 
+.row-title {
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-height: 25%;
+}
+
+
 .about-container {
-    height: 45vh;
+    padding-top: 2vh;
+    height: 60vh;
 }
 
 .links-container {
-    height: 45vh;
+    padding-top: 2vh;
+    height: 60vh;
+    background-color: #F8CC0A
 }
