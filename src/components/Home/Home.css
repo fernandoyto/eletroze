@@ -1,5 +1,5 @@
 .img-logo {
-    width: 15vh;
+    width: 40vw;
     height: 10vh;
 }
 
@@ -9,7 +9,7 @@
 }
 
 .landing-container {
-    height: 90vh;
+    height: 60vh;
     background-color: #F8CC0A
 }
 
@@ -22,11 +22,19 @@
 
 .about-container {
     padding-top: 2vh;
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 .links-container {
     padding-top: 2vh;
-    height: 60vh;
+    /* height: 60vh; */
     background-color: #F8CC0A
+}
+
+.img-why-us {
+    width: 30vw;
+}
+
+.padding-bottom {
+    padding-bottom: 3vh;
 }

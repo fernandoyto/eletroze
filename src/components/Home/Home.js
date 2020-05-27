@@ -16,23 +16,26 @@ const Home = () => {
           <Image className="img-logo" src="img/eletroze-logo.png" />
         </Col>
         <Col>
-            <div>
-              <h1>
-                Todos os materiais para sua obra.
-              </h1>
-            </div>
-            <div>
-              <p>
-                Desde 1992 trazendo os melhores produtos e os melhores preços!
-              </p>
-            </div>
-            <div>
-              <Button href="/localizacao" variant="outline-dark">
-                Localização
-              </Button>
-              <Button variant="outline-dark">Contato</Button>
-            </div>
-            
+          <div>
+            <h1>
+              Todos os materiais para sua obra.
+            </h1>
+          </div>
+          <div>
+            <p>
+              Desde 1992 trazendo os melhores produtos e os melhores preços!
+            </p>
+          </div>
+        </Col>
+        <Col>
+          <div>
+            <Button href="/localizacao" variant="outline-dark">
+              Localização
+          </Button>
+            <Button href="/contato" variant="outline-dark">
+              Contato
+          </Button>
+          </div>
         </Col>
       </Row>
 
@@ -43,18 +46,40 @@ const Home = () => {
           </h2>
         </Col>
         <Col>
-          <Row classname="justify-content-md-center">
-            <Col>
-              export
-            </Col>  
-            <Col md="auto">
-              asdsad
-            </Col>   
-            <Col>
-              sdada
-            </Col>   
+          <Row className="justify-content-md-center">
+            <Col className="padding-bottom" >
+              <div>
+                <Image className="img-why-us" src="img/money.png" alt="economizar" />
+              </div>
+              <div>
+                <h4>Preço baixo para você</h4>
+                <p>Queremos atender todas as pessoas de A.E Carvalho e região</p>
+              </div>
+            </Col>
+            <Col className="padding-bottom" md="auto">
+              <div>
+                <div>
+                  <Image className="img-why-us" src="img/hammer.png" alt="materiais-construcao" />
+                </div>
+                <div>
+                  <h4>Os produtos que você precisa</h4>
+                  <p>O melhor custo benefício para sua obra</p>
+                </div>
+              </div>
+            </Col>
+            <Col className="padding-bottom" >
+              <div>
+                <div>
+                  <Image className="img-why-us" src="img/handshake.png" alt="confianca" />
+                </div>
+                <div>
+                  <h4>Confiança e serviço que você já conhece</h4>
+                  <p>Estamos há mais de 20 anos ao seu lado!</p>
+                </div>
+              </div>
+            </Col>
           </Row>
-        </Col>  
+        </Col>
       </Row>
 
       <Row className="links-container text-center d-flex flex-column">
@@ -64,15 +89,45 @@ const Home = () => {
           </h2>
         </Col>
         <Col>
-          <Row classname="justify-content-md-center">
-            <Col>
-              Link 1 - Localização
+          <Row className="justify-content-md-center">
+            <Col className="padding-bottom" >
+              <div>
+                <div>
+                  <Link to="/localizacao">
+                    <Image className="img-why-us" src="img/location.png" alt="localizacao" />
+                  </Link>
+                </div>
+                <div>
+                  <h4>Localização</h4>
+                  <p>Veja onde nos encontrar</p>
+                </div>
+              </div>
             </Col>
-            <Col md="auto">
-              Link 2 - Sobre nós
+            <Col className="padding-bottom" md="auto">
+              <div>
+                <div>
+                  <Link to="/contato">
+                    <Image className="img-why-us" src="img/contact.png" alt="contato" />
+                  </Link>
+                </div>
+                <div>
+                  <h4>Contato</h4>
+                  <p>Saiba como falar com nós</p>
+                </div>
+              </div>
             </Col>
-            <Col>
-              Link 3 - Contato
+            <Col className="padding-bottom" >
+              <div>
+                <div>
+                  <Link to="sobre-nos">
+                    <Image className="img-why-us" src="img/info.png" alt="sobre-nos" />
+                  </Link>
+                </div>
+                <div>
+                  <h4>Sobre nós</h4>
+                  <p>Conheça um pouco mais do Eletrozé!</p>
+                </div>
+              </div>
             </Col>
           </Row>
         </Col>
